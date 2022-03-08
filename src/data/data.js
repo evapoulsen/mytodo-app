@@ -7,7 +7,7 @@ export const InfoTodo = [
         },
         {
             "id": 2,
-            "todo": "Arrange supevision meeting with John Smith",
+            "todo": "Arrange supervision meeting with John Smith",
             "why": "Because he has failed to attend the last 2 meetings and his project is at risk of failing",
             "where": "BTECH",
         },

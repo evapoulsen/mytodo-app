@@ -1,7 +1,9 @@
 import React from "react";
 import ToDoItems from "./components/ToDoItem";
+import Greeting from "./components/GreetingComponent";
+import DateComp from "./components/DateComponent";
 
-function App() {
+/* function App() {
   const date = new Date();
   var greeting;
   if (date.getHours() < 12) {
@@ -17,16 +19,19 @@ function App() {
     backgroundColor: "gray",
     padding: "10px",
     fontFamily: "Sans-Serif"
-  };
-  
+  }; */
+  class App extends React.Component {
+    render() {
   return (
     <div>
-      <header style={myStyle}><h1>{greeting}</h1></header>
-      <h2>Your ToDo List for {date.getDate() % 31 +"th"} of {date.toLocaleString("en-EN", {month: "long"})}, {date.getFullYear()} </h2>
+      <Greeting />
+      <DateComp />
+      {/* <h2>Your ToDo List for {date.getDate() % 31 +"th"} of {date.toLocaleString("en-EN", {month: "long"})}, {date.getFullYear()} </h2> */}
         <ToDoItems />
     </div>
   )
 }
+  }
 
 export default App;
 
