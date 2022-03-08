@@ -1,5 +1,6 @@
 import React from "react";
-import ToDoItems from "./components/ToDoItem";
+//import ToDoItems from "./components/ToDoItem";
+import Data from "./components/data";
 
 function App() {
   const date = new Date();
@@ -23,10 +24,9 @@ function App() {
     <div>
       <header style={myStyle}><h1>{greeting}</h1></header>
       <h2>Your ToDo List for {date.getDate() % 31 +"th"} of {date.toLocaleString("en-EN", {month: "long"})}, {date.getFullYear()} </h2>
-        <ToDoItems />
+        <Data />
     </div>
   )
 }
 
 export default App;
-
